@@ -5,8 +5,7 @@
   <p>
     A simple school landing page website made using Next.js 14, Tailwind CSS, and Framer-Motion for animations.
   </p>
-  <img src="/wischool/public/desktop.png" alt="desktop">
-  <img src="/wischool/public/iphone.png" alt="iphone">
+  <img src="/wischool/public/thumbnail.png" alt="thumbnail">
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

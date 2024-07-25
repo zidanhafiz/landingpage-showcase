@@ -6,6 +6,7 @@
     A simple school landing page website made using Next.js 14, Tailwind CSS, and Framer-Motion for animations.
   </p>
   <a href="https://wischool-ochre.vercel.app/" target="_blank">Demo view</a>
+  <hr />
   <img src="/wischool/public/thumbnail.png" alt="thumbnail">
 </div>
 

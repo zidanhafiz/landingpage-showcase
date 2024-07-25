@@ -5,6 +5,7 @@
   <p>
     A simple school landing page website made using Next.js 14, Tailwind CSS, and Framer-Motion for animations.
   </p>
+  <a href="https://wischool-ochre.vercel.app/" target="_blank">Demo view</a>
   <img src="/wischool/public/thumbnail.png" alt="thumbnail">
 </div>
 
@@ -32,7 +33,7 @@ Make sure you have Node.js and NPM installed.
 
 1. Clone the repo:
    ```bash
-  git clone https://github.com/zidanhafiz/landingpage-showcase.git
+    git clone https://github.com/zidanhafiz/landingpage-showcase.git
    ```
 2. Go into the directory:
    ```bash

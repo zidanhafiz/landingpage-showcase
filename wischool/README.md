@@ -5,7 +5,8 @@
   <p>
     A simple school landing page website made using Next.js 14, Tailwind CSS, and Framer-Motion for animations.
   </p>
-  <img src="path/to/your/logo.png" alt="Logo" width="100">
+  <img src="/wischool/public/desktop.png" alt="desktop">
+  <img src="/wischool/public/iphone.png" alt="iphone">
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -32,17 +33,21 @@ Make sure you have Node.js and NPM installed.
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/yourrepo.git
+  git clone https://github.com/zidanhafiz/landingpage-showcase.git
    ```
- 2. Install NPM packages:
+2. Go into the directory:
+   ```bash
+   cd wischool
+   ```
+3. Install NPM packages:
 	 ```bash
 	 npm install
 	 ```
-2. Run the server:
+4. Run the server:
 	```bash
 	npm run dev
 	```
-3. Open in browser:
+5. Open in browser:
 	```bash
 	http://localhost:3000
 	```

@@ -86,7 +86,7 @@ const NavList = ({ list, isMobile, isOpen }: { list: { name: string; href: strin
         {isOpen && (
           <Motion
             component='ul'
-            className='absolute bg-white inset-0 top-20 px-6 py-10'
+            className='absolute bg-white inset-0 px-6 pt-32 pb-20 z-20 shadow-lg'
             initial={{ y: -1000 }}
             animate={{ y: 0 }}
             exit={{ y: -1000 }}

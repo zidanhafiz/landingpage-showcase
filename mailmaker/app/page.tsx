@@ -1,9 +1,10 @@
+import Hero from "./Hero";
+
 export default function Home() {
   return (
     <main className="">
-      <h1>
-        Mailmaker
-      </h1>
+      <Hero />
+      <div className="h-screen"></div>
     </main>
   );
 }

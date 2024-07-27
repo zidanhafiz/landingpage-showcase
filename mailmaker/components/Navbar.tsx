@@ -26,7 +26,7 @@ const list = [
 ];
 
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1024);
+  const [isMobile, setIsMobile] = useState<boolean>(true);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -73,13 +73,14 @@ const Navbar = () => {
         list={list}
         isMobile={isMobile}
         isOpen={isOpen}
+        handleOpen={handleOpen}
       />
       {!isMobile && <CallToActionButtons />}
     </nav>
   );
 };
 
-const NavList = ({ list, isMobile, isOpen }: { list: { name: string; href: string }[]; isMobile: boolean; isOpen: boolean }) => {
+const NavList = ({ list, isMobile, isOpen, handleOpen }: { list: { name: string; href: string }[]; isMobile: boolean; isOpen: boolean, handleOpen: () => void }) => {
   if (isMobile) {
     return (
       <AnimatePresence>
@@ -101,6 +102,7 @@ const NavList = ({ list, isMobile, isOpen }: { list: { name: string; href: strin
                 <Link
                   href={item.href}
                   className='text-black hover:text-blue-violet transition-colors text-xl'
+                  onClick={handleOpen}
                 >
                   {item.name}
                 </Link>
@@ -131,9 +133,9 @@ const NavList = ({ list, isMobile, isOpen }: { list: { name: string; href: strin
 
 const OpenButton = ({ handleOpen, isOpen }: { handleOpen: () => void; isOpen: boolean }) => {
   return (
-    <div
+    <button
       onClick={handleOpen}
-      className='cursor-pointer flex flex-col justify-center justify-self-end mr-5'
+      className='cursor-pointer flex flex-col justify-center justify-self-end mr-5 lg:hidden'
     >
       <Motion
         component='div'
@@ -149,7 +151,7 @@ const OpenButton = ({ handleOpen, isOpen }: { handleOpen: () => void; isOpen: bo
       >
         {" "}
       </Motion>
-    </div>
+    </button>
   );
 };
 

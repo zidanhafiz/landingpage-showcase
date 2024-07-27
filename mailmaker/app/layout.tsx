@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { spaceGrotesk } from "@/utils/fonts";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "MailMaker",
@@ -14,12 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={spaceGrotesk.className}>
         <header>
           <Navbar />
         </header>
         {children}
+        <Footer />
       </body>
     </html>
   );

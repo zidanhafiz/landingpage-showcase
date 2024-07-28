@@ -7,6 +7,28 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "MailMaker",
   description: "Start increasing your marketing efforts in just a few minutes.",
+  metadataBase: new URL('http://localhost:3000'),
+  openGraph: {
+    title: "MailMaker",
+    description: "Start increasing your marketing efforts in just a few minutes.",
+    siteName: "MailMaker",
+    images: [
+      {
+        url: "./opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "MailMaker",
+      },
+      {
+        url: "./opengraph-image.png",
+        width: 800,
+        height: 600,
+        alt: "MailMaker",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -15,7 +37,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html
+      lang='en'
+      className='scroll-smooth'
+    >
       <body className={spaceGrotesk.className}>
         <header>
           <Navbar />
@@ -26,3 +51,4 @@ export default function RootLayout({
     </html>
   );
 }
+

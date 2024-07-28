@@ -10,6 +10,9 @@
   <img src="/mailmaker/public/thumbnail.png" alt="thumbnail">
 </div>
 
+**This website is for portfolio purposes only.**
+Designed by Fitr Media
+[Original content](https://webflow.com/made-in-webflow/website/MailMaker-or-Free-SaaS-Template-for-SMS-and-Email-Startups)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Tech Stack
@@ -20,6 +23,8 @@ This website is built with:
 - **Tailwind CSS**
 - **Framer Motion**
 - **React Hook Form**
+
+[Resource](https://webflow.com/made-in-webflow/website/MailMaker-or-Free-SaaS-Template-for-SMS-and-Email-Startups)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

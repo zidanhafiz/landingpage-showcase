@@ -97,13 +97,13 @@ const Testimonials = () => {
       </div>
       <div className='flex gap-10 md:gap-16 mt-10 md:mt-5 justify-center relative z-10'>
         <button
-          className='bg-blue-violet hover:bg-violet-700 transition-colors text-white p-4 rounded-full flex items-center justify-center'
+          className='bg-blue-violet hover:bg-white hover:text-blue-violet border border-blue-violet transition-colors text-white p-4 rounded-full flex items-center justify-center'
           onClick={handlePrev}
         >
           <IoIosArrowBack className="w-10 h-10" />
         </button>
         <button
-          className='bg-blue-violet hover:bg-violet-700 transition-colors text-white p-4 rounded-full flex items-center justify-center'
+          className='bg-blue-violet hover:bg-white hover:text-blue-violet border border-blue-violet transition-colors text-white p-4 rounded-full flex items-center justify-center'
           onClick={handleNext}
         >
           <IoIosArrowForward className="w-10 h-10" />
